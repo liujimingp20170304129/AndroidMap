@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Jiangzhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:width="1dp"
+                android:text="江职"/>
+            <Button
+                android:id="@+id/zhongguanchun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:width="1dp"
+                android:text="中关村"/>
+    </LinearLayout>
+    </LinearLayout>
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

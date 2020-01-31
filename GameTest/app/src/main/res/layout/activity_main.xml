@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/text01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你没有单击任何按钮"
+        android:textSize="25sp"
+       />
+    <Button
+        android:id="@+id/BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="普通按钮"
+        android:textSize="23sp"/>
+
+    <ImageButton
+        android:id="@+id/imageBTN"
+        android:layout_width="205dp"
+        android:layout_height="302dp"
+        android:src="@drawable/abcd" />
+    <ToggleButton
+        android:id="@+id/openoffBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        /> <!-- 添加一个开关按钮 -->
+</LinearLayout>

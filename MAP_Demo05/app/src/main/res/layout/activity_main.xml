@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+
+         <Button
+             android:id="@+id/Lujiazui"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:text="陆家嘴"/>
+
+         <Button
+             android:id="@+id/Zhongguancun"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:text="中关村"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/scroll_left"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="左"/>
+
+            <Button
+                android:id="@+id/scroll_up"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/scroll_left"
+                android:text="上"/>
+
+            <Button
+                android:id="@+id/scroll_down"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/scroll_up"
+                android:layout_toRightOf="@id/scroll_left"
+                android:text="下"/>
+
+            <Button
+                android:id="@+id/scroll_right"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/scroll_down"
+                android:text="下"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <TextView android:text="颜色"/>
+                <SeekBar android:id="@+id/hueSeekBar" android:layout_marginLeft="10dp"/>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="alpha" />
+                <SeekBar android:id="@+id/alphaSeekBar" android:layout_marginLeft="5dp"/>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <TextView android:text="粗细"/>
+                <SeekBar android:id="@+id/cuxiSeekBar" android:layout_marginLeft="11dp"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+
+</LinearLayout>

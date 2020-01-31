@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tap_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击获取坐标"
+        android:textColor="#00f"
+        android:textSize="22sp"/>
+    <TextView
+        android:id="@+id/camer_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="移动镜头屏幕坐标"
+        android:textColor="#008000"
+        android:textSize="22sp"/>
+    <TextView
+        android:id="@+id/fanwei_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上海市的可见范围"
+        android:textColor="#ff0000"
+        android:textSize="22sp"/>
+    <com.amap.api.maps2d.MapView
+
+        android:id="@+id/map"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

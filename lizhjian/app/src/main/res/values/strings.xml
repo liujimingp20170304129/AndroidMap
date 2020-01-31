@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">lizhijian</string>
+    <string name="tap_instructions">长按或者点击</string>
+    <string name="move_camera">移动摄像机</string>
+    <string name="whether_visible_text">上海是否可见</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout tools:context=".MainActivity" android:orientation="vertical" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="5.0dip">
+        <EditText
+            android:id="@+id/keyword"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textSize="16.0sp"
+            android:hint="请输入关键字"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/city"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textSize="16.0sp"
+            android:hint="请输入关键字"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="开始搜索"/>
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="下一页"/>
+    </LinearLayout>
+    <fragment class="com.amap.api.maps2d.SupportMapFragment" android:id="@+id/map" android:layout_height="match_parent" android:layout_width="match_parent"/>
+</LinearLayout>
